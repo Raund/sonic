@@ -436,7 +436,7 @@ header{
     font-size: 34px;
     line-height: 24px;
     color: #FFF;
-    margin: 0 0 40 0;
+    margin: 0 0 40px 0;
   }
   p{
     font-size: 16px;
@@ -531,7 +531,123 @@ header{
       }
     }  
   }
+  .item-block{
+    width: 100%;
+    &-manuf-name{
+      line-height: 32px;
+      margin: 0 0 5px 0;
+    }
+    &-model-name{
+      margin-bottom: 35px;
+    }
+    &-images{
+      float: left;
+      margin-right: 15px;
+    }
+    .small-images{
+      margin-top: 20px;
+      li{
+        float: left;
+        margin-left: 15px;
+        &:first-child{
+          margin-left: 0;
+        }        
+        img{
+          border: 2px solid #fff;
+          &:hover{
+            border: 2px solid $link-active;
+          }
+        }
+      }
+    }
+    .shopping-block{
+      &-colors{
+        li{
+          height: 46px;
+          float: left;
+          margin-left: 10px;
+          border: 1px solid #262626;
+          &:first-child{
+            margin-left: 0;
+          }
+          &:hover{
+            border: 1px solid #fff;
+          }
+        }
+      }
+      &-price{
+        font-size: 30px;
+        color: $link-active;
+      }
+      &-quantity{
+        width: 180px;
+        height: 46px;
+        float: right;
+        .quantity{
+          float: left;
+          margin-right: 10px;
+          width: 46px;
+          height: 46px;
+          border: 1px solid #595959;
+          text-align: center;
+          line-height: 46px;
+          color: #CCC;
+        }
+        .updown-quantity{
+          float: left;
+          .quantity-up a{
+            display: block;
+            width: 12px;
+            height: 23px;
+            background: url("../img/up-normal.png") no-repeat 50% 50%;
+            &:hover{
+              background: url("../img/up-hover.png") no-repeat 50% 50%;
+            }
+          }
+          .quantity-down a{
+            display: block;
+            width: 12px;
+            height: 23px;
+            background: url("../img/down-normal.png") no-repeat 50% 50%;
+            &:hover{
+              background: url("../img/down-hover.png") no-repeat 50% 50%;
+            }
+          }
+        }
+        .in-stock{
+          height: 46px;
+          text-align: right;
+          line-height: 40px;
+          span{
+            vertical-align: middle;
+            color: #CCC;
+          }
+        }
+      }
+      &-price{
+        float: left;
+        margin-top: 35px;
+      }
+      button{
+        float: right;
+        width: 180px;
+        height: 46px;
+        background: inherit;
+        border: 1px solid #fff;
+        color: #FFF;
+        font-size: 20px;
+        font-family: "PTSerifRegular", $helvetica;
+        margin-top: 30px;
+        cursor: pointer;
+        &:hover{
+          color: #000;
+          background: #FFF;
+        }
+      }
+    }    
+  }
 }
+
 
 footer{
   height: 100px;
