@@ -1,0 +1,6 @@
+.bowerrc
+.sublime-gulp.cache
+package.json
+gulpfile.js
+/node_modules/*
+*.zip
