@@ -444,23 +444,23 @@ header {
           border: 2px solid #fff; }
           #content .item-block .small-images li img:hover {
             border: 2px solid #bf6d3b; }
-    #content .item-block .shopping-block-colors li {
+    #content .item-block .right-block .shopping-block-colors li {
       height: 46px;
       float: left;
       margin-left: 10px;
       border: 1px solid #262626; }
-      #content .item-block .shopping-block-colors li:first-child {
+      #content .item-block .right-block .shopping-block-colors li:first-child {
         margin-left: 0; }
-      #content .item-block .shopping-block-colors li:hover {
+      #content .item-block .right-block .shopping-block-colors li:hover {
         border: 1px solid #fff; }
-    #content .item-block .shopping-block-price {
+    #content .item-block .right-block .shopping-block-price {
       font-size: 30px;
       color: #bf6d3b; }
-    #content .item-block .shopping-block-quantity {
+    #content .item-block .right-block .shopping-block-quantity {
       width: 180px;
       height: 46px;
       float: right; }
-      #content .item-block .shopping-block-quantity .quantity {
+      #content .item-block .right-block .shopping-block-quantity .quantity {
         float: left;
         margin-right: 10px;
         width: 46px;
@@ -469,33 +469,33 @@ header {
         text-align: center;
         line-height: 46px;
         color: #CCC; }
-      #content .item-block .shopping-block-quantity .updown-quantity {
+      #content .item-block .right-block .shopping-block-quantity .updown-quantity {
         float: left; }
-        #content .item-block .shopping-block-quantity .updown-quantity .quantity-up a {
+        #content .item-block .right-block .shopping-block-quantity .updown-quantity .quantity-up a {
           display: block;
           width: 12px;
           height: 23px;
           background: url("../img/up-normal.png") no-repeat 50% 50%; }
-          #content .item-block .shopping-block-quantity .updown-quantity .quantity-up a:hover {
+          #content .item-block .right-block .shopping-block-quantity .updown-quantity .quantity-up a:hover {
             background: url("../img/up-hover.png") no-repeat 50% 50%; }
-        #content .item-block .shopping-block-quantity .updown-quantity .quantity-down a {
+        #content .item-block .right-block .shopping-block-quantity .updown-quantity .quantity-down a {
           display: block;
           width: 12px;
           height: 23px;
           background: url("../img/down-normal.png") no-repeat 50% 50%; }
-          #content .item-block .shopping-block-quantity .updown-quantity .quantity-down a:hover {
+          #content .item-block .right-block .shopping-block-quantity .updown-quantity .quantity-down a:hover {
             background: url("../img/down-hover.png") no-repeat 50% 50%; }
-      #content .item-block .shopping-block-quantity .in-stock {
+      #content .item-block .right-block .shopping-block-quantity .in-stock {
         height: 46px;
         text-align: right;
         line-height: 40px; }
-        #content .item-block .shopping-block-quantity .in-stock span {
+        #content .item-block .right-block .shopping-block-quantity .in-stock span {
           vertical-align: middle;
           color: #CCC; }
-    #content .item-block .shopping-block-price {
+    #content .item-block .right-block .shopping-block-price {
       float: left;
       margin-top: 35px; }
-    #content .item-block .shopping-block button {
+    #content .item-block .right-block .shopping-block button {
       float: right;
       width: 180px;
       height: 46px;
@@ -506,9 +506,37 @@ header {
       font-family: "PTSerifRegular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
       margin-top: 30px;
       cursor: pointer; }
-      #content .item-block .shopping-block button:hover {
+      #content .item-block .right-block .shopping-block button:hover {
         color: #000;
         background: #FFF; }
+    #content .item-block .right-block .properties {
+      padding-top: 145px; }
+      #content .item-block .right-block .properties h4 {
+        line-height: 24px; }
+      #content .item-block .right-block .properties table {
+        width: 480px;
+        margin-top: 25px;
+        color: #CCC;
+        font-size: 16px;
+        line-height: 22px; }
+        #content .item-block .right-block .properties table tr {
+          height: 30px; }
+          #content .item-block .right-block .properties table tr td {
+            padding: 0; }
+            #content .item-block .right-block .properties table tr td:first-child {
+              width: 300px; }
+    #content .item-block .more-describe {
+      margin-top: 35px; }
+      #content .item-block .more-describe p {
+        color: #CCC;
+        font-size: 16px;
+        line-height: 24px; }
+  #content .accompaying-goods {
+    margin-top: 60px; }
+    #content .accompaying-goods .product-item {
+      margin-right: 2.75%; }
+      #content .accompaying-goods .product-item:nth-child(4n) {
+        margin-right: 0; }
 
 footer {
   height: 100px;

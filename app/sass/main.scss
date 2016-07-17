@@ -560,91 +560,133 @@ header{
         }
       }
     }
-    .shopping-block{
-      &-colors{
-        li{
-          height: 46px;
-          float: left;
-          margin-left: 10px;
-          border: 1px solid #262626;
-          &:first-child{
-            margin-left: 0;
-          }
-          &:hover{
-            border: 1px solid #fff;
-          }
-        }
-      }
-      &-price{
-        font-size: 30px;
-        color: $link-active;
-      }
-      &-quantity{
-        width: 180px;
-        height: 46px;
-        float: right;
-        .quantity{
-          float: left;
-          margin-right: 10px;
-          width: 46px;
-          height: 46px;
-          border: 1px solid #595959;
-          text-align: center;
-          line-height: 46px;
-          color: #CCC;
-        }
-        .updown-quantity{
-          float: left;
-          .quantity-up a{
-            display: block;
-            width: 12px;
-            height: 23px;
-            background: url("../img/up-normal.png") no-repeat 50% 50%;
-            &:hover{
-              background: url("../img/up-hover.png") no-repeat 50% 50%;
+    .right-block{
+
+      .shopping-block{
+        &-colors{
+          li{
+            height: 46px;
+            float: left;
+            margin-left: 10px;
+            border: 1px solid #262626;
+            &:first-child{
+              margin-left: 0;
             }
-          }
-          .quantity-down a{
-            display: block;
-            width: 12px;
-            height: 23px;
-            background: url("../img/down-normal.png") no-repeat 50% 50%;
             &:hover{
-              background: url("../img/down-hover.png") no-repeat 50% 50%;
+              border: 1px solid #fff;
             }
           }
         }
-        .in-stock{
+        &-price{
+          font-size: 30px;
+          color: $link-active;
+        }
+        &-quantity{
+          width: 180px;
           height: 46px;
-          text-align: right;
-          line-height: 40px;
-          span{
-            vertical-align: middle;
+          float: right;
+          .quantity{
+            float: left;
+            margin-right: 10px;
+            width: 46px;
+            height: 46px;
+            border: 1px solid #595959;
+            text-align: center;
+            line-height: 46px;
             color: #CCC;
           }
+          .updown-quantity{
+            float: left;
+            .quantity-up a{
+              display: block;
+              width: 12px;
+              height: 23px;
+              background: url("../img/up-normal.png") no-repeat 50% 50%;
+              &:hover{
+                background: url("../img/up-hover.png") no-repeat 50% 50%;
+              }
+            }
+            .quantity-down a{
+              display: block;
+              width: 12px;
+              height: 23px;
+              background: url("../img/down-normal.png") no-repeat 50% 50%;
+              &:hover{
+                background: url("../img/down-hover.png") no-repeat 50% 50%;
+              }
+            }
+          }
+          .in-stock{
+            height: 46px;
+            text-align: right;
+            line-height: 40px;
+            span{
+              vertical-align: middle;
+              color: #CCC;
+            }
+          }
+        }
+        &-price{
+          float: left;
+          margin-top: 35px;
+        }
+        button{
+          float: right;
+          width: 180px;
+          height: 46px;
+          background: inherit;
+          border: 1px solid #fff;
+          color: #FFF;
+          font-size: 20px;
+          font-family: "PTSerifRegular", $helvetica;
+          margin-top: 30px;
+          cursor: pointer;
+          &:hover{
+            color: #000;
+            background: #FFF;
+          }
         }
       }
-      &-price{
-        float: left;
-        margin-top: 35px;
-      }
-      button{
-        float: right;
-        width: 180px;
-        height: 46px;
-        background: inherit;
-        border: 1px solid #fff;
-        color: #FFF;
-        font-size: 20px;
-        font-family: "PTSerifRegular", $helvetica;
-        margin-top: 30px;
-        cursor: pointer;
-        &:hover{
-          color: #000;
-          background: #FFF;
+      .properties{
+        padding-top: 145px;
+        h4{
+          line-height: 24px;
         }
+        table{
+          width: 480px;
+          margin-top: 25px;
+          color: #CCC;
+          font-size: 16px;
+          line-height: 22px;
+          tr{
+            height: 30px;
+            td{
+            padding: 0; 
+              &:first-child{
+                width: 300px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .more-describe{
+      margin-top: 35px;
+      p{
+        color: #CCC;
+        font-size: 16px;
+        line-height: 24px;
       }
     }    
+  }
+  .accompaying-goods{
+    margin-top: 60px;
+    .product-item{
+      margin-right: 2.75%;
+      &:nth-child(4n){
+        margin-right: 0;
+      }
+    }
   }
 }
 
